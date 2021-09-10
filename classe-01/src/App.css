@@ -1,0 +1,75 @@
+/* .App {
+  min-height: 50%;
+  background-color: white;
+  text-align: center;
+} */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 430px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 100px auto;
+  padding: 30px 30px;
+}
+
+.close {
+  align-self: flex-end;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.icon{
+  margin-bottom: 30px;
+}
+
+.card p {
+  height: 48px;
+  width: 327px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card button {
+  all: unset;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 201px;
+  height: 49px;
+  
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 134.19%;
+  
+  text-align: center;
+  /* background-color: #ed6755;
+  box-shadow: 8px 8px 20px rgba(237, 103, 85, 0.5); */
+}
+
+.card button.cookie {
+  background-color: #ed6755;
+  box-shadow: 8px 8px 20px rgba(237, 103, 85, 0.5);
+}
+
+.card button.alert {
+  background-color: #1C1B5E;
+  box-shadow: 8px 8px 20px rgba(28, 27, 94, 0.5);
+}
+
+.hidden {
+  display: none;
+}
