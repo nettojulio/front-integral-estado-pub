@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import cookie from './assets/cookie.svg'
-import closed from './assets/close.svg'
+import cookie from './assets/cookie.svg';
+import closed from './assets/close.svg';
 
 function App() {
   const [close, setClose] = useState('');
@@ -20,12 +20,11 @@ function App() {
   }
 
   function closeAlert() {
-    const closeHidden = close !== 'hidden' ? 'hidden' : '';
+    const closeHidden = close !== 'hidden' && 'hidden';
     setClose(closeHidden);
     // EXTRA POP UP
     // setTimeout(() => setClose(''), 5000);
   }
-
 
   return (
     <div className="App">

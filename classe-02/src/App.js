@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import kelvin from './assets/kelvin-costa.png'
+import kelvin from './assets/kelvin-costa.png';
 
 function App() {
   const profiles = [{
@@ -9,15 +9,15 @@ function App() {
     username: "@costa",
     followers: 140,
     following: 207
-  }
-]
+  }]
+
   const [cta, setCta] = useState('seguir');
   const [follow, setFollow] = useState(profiles[0].followers);
 
   function activeProfile() {
     const newCta = cta === 'seguir' ? 'seguindo' : 'seguir';
     setCta(newCta)
-    const updateProfile = newCta === 'seguir'? setFollow(follow - 1) : setFollow(follow + 1);
+    const updateProfile = newCta === 'seguir' ? setFollow(follow - 1) : setFollow(follow + 1);
   }
 
 
@@ -41,7 +41,7 @@ function App() {
   return (
     <div className="App">
       {profiles.map(unitprofile =>
-        <Profile picture={unitprofile.picture}>
+        <Profile key={unitprofile.username} picture={unitprofile.picture}>
           {unitprofile.name}
           {unitprofile.followers}
           {unitprofile.username}
@@ -55,7 +55,5 @@ function App() {
     </div>
   );
 }
-
-
 
 export default App;
