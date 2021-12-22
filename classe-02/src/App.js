@@ -18,6 +18,7 @@ function App() {
     const newCta = cta === 'seguir' ? 'seguindo' : 'seguir';
     setCta(newCta)
     const updateProfile = newCta === 'seguir' ? setFollow(follow - 1) : setFollow(follow + 1);
+    console.log(updateProfile);
   }
 
 

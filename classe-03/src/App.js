@@ -11,12 +11,13 @@ function App() {
 
   function red() {
     const newContador = contador === 0 ? '' : setContador(contador - 1);
+    console.log(newContador);
   }
 
   function Card(props) {
     return (
       <div className='stick'>
-        <img className='picture' src={props.pics}></img>
+        <img className='picture' src={props.pics} alt="pic"></img>
         <h1 className='main-title'>
           {props.product}
         </h1>
